@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing
+        http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="news_list" controller="App\Controller\NewsController::list" path="/news" >
+        <!-- settings -->
+    </route>
+
+    <route id="news_show" controller="App\Controller\NewsController::show" path="/news/{slug}">
+        <!-- settings -->
+    </route>
+</routes>

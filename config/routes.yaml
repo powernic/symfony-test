@@ -1,6 +1,7 @@
-# This file is the entry point to configure your own HTTP routes.
-# Files in the routes/ subdirectory configure the routes for your dependencies.
+news_list:
+    path:     /
+    controller: App\Controller\NewsController::list
 
-#index:
-#    path: /
-#    defaults: { _controller: 'App\Controller\DefaultController::index' }
+news_show:
+    path:     /news/{slug}
+    controller: App\Controller\NewsController::show

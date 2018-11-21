@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My cool news{% endblock %}
+
+{% block body %}
+    <div class="container" id="posts">
+        {% for post in posts %}
+            <div class="row">
+                <div class="col">
+                    <div class="p-1 bg-secondary text-white">
+                        {{ post.name }}
+                        <div class="float-right">{{ post.date }}</div>
+                    </div>
+                    <p class="p-3 border border-primary">
+                        {{ post.description }}
+                        <br>
+                        <a class="clearfix btn btn-primary p-1" href="{{ post.link }}" target="_blank">Read more...</a>
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

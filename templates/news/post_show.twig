@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ post.name }}{% endblock %}
+
+{% block body %}
+    <div class="container" id="posts">
+        <div class="row">
+            <div class="col">
+                <div class="p-1 bg-secondary text-white">
+                    {{ post.name }}
+                    <div class="float-right">{{ post.date }}</div>
+                </div>
+                <p class="p-3 border border-primary">
+                    {{ post.description }}
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
